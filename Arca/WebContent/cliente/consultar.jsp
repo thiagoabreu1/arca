@@ -24,8 +24,12 @@
 							disabled></th>
 						<th><input type="text" class="form-control"
 							placeholder="Nome" disabled></th>
+							<th><input type="text" class="form-control"
+							placeholder="CPF" disabled></th>
 						<th><input type="text" class="form-control"
 							placeholder="Telefone" disabled></th>
+							<th><input type="text" class="form-control"
+							placeholder="Bairro" disabled></th>
 						<th><input type="text" class="form-control"
 							placeholder="Endereço" disabled></th>
 					</tr>
@@ -37,7 +41,9 @@
 						out.print("<tr>");
 						out.print("<td>" + c.getId() +		 "</td>");
 						out.print("<td>" + c.getNome() +	 "</td>");
+						out.print("<td>" + c.getCpf() +	 	 "</td>");
 						out.print("<td>" + c.getTelefone() + "</td>");
+						out.print("<td>" + c.getBairro() +	 "</td>");
 						out.print("<td>" + c.getEndereco() + "</td>");
 						out.print("</tr>");
 							}	

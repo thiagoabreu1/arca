@@ -143,8 +143,8 @@ public class ClienteServlet extends HttpServlet{
 			stmt = con.prepareStatement(SQL);
 
 			stmt.setString(1, null);
-			stmt.setString(2, c.getCpf());
-			stmt.setString(3, c.getNome());
+			stmt.setString(2, c.getNome());
+			stmt.setString(3, c.getCpf());
 			stmt.setInt(4, c.getTelefone());
 			stmt.setInt(5, c.getBairro());
 			stmt.setString(6, c.getEndereco());

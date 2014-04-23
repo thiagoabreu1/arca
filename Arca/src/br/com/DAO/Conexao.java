@@ -13,10 +13,11 @@ public class Conexao {
 
 	private Conexao() {
 	}
-	public static String URL = "jdbc:mysql://localhost:3306/arca";
-	public static String URL_NO_DB = "jdbc:mysql://localhost:3306/";
+	public static String URL = "jdbc:mysql://cainf-295518/arca";
+	public static String URL_NO_DB = "jdbc:mysql://cainf-295518:3306/";
 	public static String usuario = "root";
 	public static String senha = "123123";
+	public static String status;
 	
 	public static Connection getConexao() {
 		//Singleton
@@ -25,6 +26,7 @@ public class Conexao {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 				con = DriverManager.getConnection(URL, usuario, senha);
+				status="Conexao aberta";
 
 			} catch (SQLException sqlE) {
 				System.out.println("Falha ao acessar o BD - COD: " + sqlE.getErrorCode());
