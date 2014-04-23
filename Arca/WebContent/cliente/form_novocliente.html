@@ -1,0 +1,78 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+<form class="form-horizontal" method="post" action="cliente">
+<input type="hidden" name="acao" value="novoCliente"/>
+<fieldset>
+
+<!-- Form Name -->
+<legend>Novo cliente</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nome">Nome completo</label>  
+  <div class="col-md-6">
+  <input id="nome" name="nome" type="text" placeholder="nome completo" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cpf">CPF</label>  
+  <div class="col-md-1">
+  <input id="cpf" name="cpf" type="number" placeholder="" class="form-control input-md" required="" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="telefone">Telefone</label>  
+  <div class="col-md-1">
+  <input id="telefone" name="telefone" type="number" placeholder="telefone" class="form-control input-md" required="" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bairro">Bairro</label>
+  <div class="col-md-2">
+    <select id="bairro" name="bairro" class="form-control">
+      <option value="1">Guará I</option>
+      <option value="2">Guará II</option>
+      <option value="3">Águas-Claras</option>
+      <option value="4">Sudoeste</option>
+      <option value="5">Octogonal</option>
+      <option value="6">Asa Norte</option>
+      <option value="7">Asa Sul</option>
+      <option value="8">Taguatinga</option>
+      <option value="9">Granja do Torto</option>
+      <option value="10">Setor Militar Urbano - SMU</option>
+      <option value="11">Vila da Telebrasília</option>
+      <option value="12">Vila Planalto</option>
+      <option value="13">Zona Cívico-Administrativa</option>
+      <option value="14">Zona Industrial</option>
+      <option value="15">Outro</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="endereco">Endereço</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="endereco" name="endereco"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="salvar"></label>
+  <div class="col-md-4">
+    <button id="salvar" name="salvar" class="btn btn-primary">Salvar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
